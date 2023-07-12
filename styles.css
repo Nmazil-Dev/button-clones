@@ -1,0 +1,149 @@
+*{
+    /* outline: 2px dashed red; */
+}
+.container{
+    /* These center a flex */
+    display: grid;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    height: 500px;
+}
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    background-color: teal;
+    border: 4px solid rgb(100, 192, 192);
+    padding: 15px;
+    border-radius: 60px;
+    color: white;
+}
+.grid-cols-btns{
+    display: grid;
+    grid-template-columns: repeat(5, 10em);
+    gap: 5em;
+}
+
+.subscribe-btn{
+    background-color: rgb(241, 22, 22);
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    /* Adds a fade back effect on hover out */
+    transition: background-color 1s;
+}
+.subscribe-btn:hover{
+    background-color: rgb(194, 0, 0);
+    transition: .5s;
+}
+.join-btn{
+    background-color: white;
+    color: rgb(54, 126, 235);
+    border: 2px solid rgb(54, 126, 235);
+    border-radius: 5px;
+    font-size: 1.5em;
+    width: 5em;
+    /* Centers a specific grid item */
+    justify-self: center;
+    transition: background-color .8s;
+}
+.join-btn:hover{
+    background-color: rgb(54, 126, 235);
+    color:white;
+    transition: .7s ease-in-out;
+}
+.tweet-btn{
+    background-color: rgb(26, 156, 255);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    transition: background-color 1s;
+}
+.tweet-btn:hover{
+    background-color: rgb(59, 128, 231);
+    color:white;
+    transition: .7s ease-in-out;
+}
+.basic-login-btn{
+    font-size: 1.5em;
+    padding: 5px;
+    width: 4em;
+    justify-self: center;
+    background: rgb(235, 250, 255);
+    border: 2px solid rgb(67, 122, 140);
+    border-radius: 5px;
+    color: rgb(67, 122, 140);
+}
+.basic-login-btn:hover{
+    background-color: rgb(204, 234, 245);
+    transition: background-color 1s;
+}
+.udemy-black-btn{
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: bold;
+}
+.udemy-black-btn:hover{
+    background-color:rgb(65, 65, 65);
+}
+.reddit-join-btn{
+    background-color: rgb(34, 34, 219);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5em;
+    width: 5em;
+    justify-self: center;
+}
+.reddit-join-btn:hover{
+    background-color: rgb(50, 108, 255);
+}
+.like-dislike-btn{
+    display:grid;
+    grid-template-columns: 2.5fr 1.5px 2fr;
+    background-color: rgb(107, 107, 107);
+    border-radius: 20px;
+    justify-self: center;
+}
+.like-dislike-btn span{
+    color: white;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+.like-dislike-btn .like-half{
+    background-color: rgb(107, 107, 107);
+    height: 2em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
+    display:grid;
+}
+.like-half:hover{
+    background: rgb(143, 143, 143);
+}
+.like-dislike-btn .divider{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5px 0px 5px 0px;
+}
+.like-dislike-btn .dislike-half{
+    background-color: rgb(107, 107, 107);
+    height: 2em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    display: grid;
+}
+.dislike-half:hover{
+    background: rgb(143, 143, 143);
+}
